@@ -1,0 +1,9 @@
+{
+    "name": "hello-world",
+    "author": "Erica Perry",
+    "private": true,
+    "dependecies": {},
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
