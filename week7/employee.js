@@ -1,3 +1,16 @@
+/* 
+Title: Perry-exercise 7.4.js
+Author: Erica Perry
+Date:9/18/2020
+Description: employee.js
+*/
+
+
+/*var header = require('../Erica-header.js');
+console.log(header.display("Erica", "Perry", "exercise 7.4.js"));
+console.log("\n") */
+
+
 // Require statements
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
