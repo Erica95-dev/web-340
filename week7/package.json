@@ -1,9 +1,13 @@
 {
-    "name": "Chai-example",
-    "author": "Erica Perry",
-    "private": true,
-    "dependencies": {
-        "chai": "^4.2.0",
-        "mocha": "^8.1.3"
-    }
+  "name": "chai-example",
+  "author": "Erica",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }

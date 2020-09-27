@@ -1,14 +1,7 @@
-function fruits(str) {
 
-    return str.split(',');
 
-}
 
-module.exports = fruits;
-
-Unit Test
-
-var fruits = require("../fruits");
+var fruits = require("../perry-fruits");
 
 var chai = require("chai");
 
