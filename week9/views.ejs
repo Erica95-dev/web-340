@@ -1,0 +1,58 @@
+
+<script> app.get("/views/:queryName", function (request, response) {
+
+    var queryName = request.params.queryName;
+
+    Employee.find({'name': queryName}, function(error, employees) {
+
+        if (error) throw error;
+
+        console.log(employees);
+
+        if (employees.length > 0) {
+
+            response.render("view", {
+
+                title: "Employee Record",
+
+                employee: employees
+
+            })
+
+        }
+
+        else {
+
+            response.redirect("/list")
+
+        }
+
+    });
+
+});
+
+</script>
+<div role="main" class="container" style="width: 50%;">
+
+    <br/><br/>
+
+    <h2>-- Employee Record --</h2>
+
+    <div>
+
+        <div class="form-group">
+
+            txtName">Name:
+
+            <label for="txtName">Name:</label>
+
+            <input type="text" class="form-control" id="txtName" value="<%= employee[0].name %>" name="txtName" />
+        </div>
+
+    </div>
+
+    <br /><br />
+
+    <href="/list">Return to Employees</a>
+    
+</div>
